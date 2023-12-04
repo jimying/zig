@@ -71,6 +71,8 @@ pub const available_libcs = [_]ArchOsAbi{
     .{ .arch = .x86_64, .os = .linux, .abi = .musl },
     .{ .arch = .x86_64, .os = .windows, .abi = .gnu },
     .{ .arch = .x86_64, .os = .macos, .abi = .none, .os_ver = .{ .major = 10, .minor = 7, .patch = 0 } },
+    .{ .arch = .loongarch64, .os = .linux, .abi = .gnu },
+    .{ .arch = .loongarch32, .os = .linux, .abi = .gnu },
 };
 
 pub fn libCGenericName(target: std.Target) [:0]const u8 {
